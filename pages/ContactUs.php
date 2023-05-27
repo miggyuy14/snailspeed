@@ -14,10 +14,11 @@
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
         $email = $_POST['email'];
+        $contact_number = $_POST['contact_no'];
         $message = $_POST['message'];
         
         // Validate form data (you can add more validation if needed)
-        if (empty($name) || empty($email) || empty($message)) {
+        if (empty($first_name) || empty($email) || empty($message)) {
             echo '<p>Please fill in all fields.</p>';
         } else { 
             // Create a new PDO instance
@@ -25,7 +26,7 @@
             
             // Prepare and execute the SQL query to insert the data into the database
             $stmt = $pdo->prepare("INSERT INTO contacts (first_name, last_name, email, contact_number,message) VALUES (?, ?, ?, ?, ?)");
-            $stmt->execute([$name, $email, $message]);
+            $stmt->execute([$first_name, $last_name, $email, $contact_number,$message]);
             
             if ($stmt) {
                 echo '<p>Your message has been sent successfully. We will get back to you soon!</p>';
