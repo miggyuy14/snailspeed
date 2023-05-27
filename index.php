@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Shop Item - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <?php include 'layouts/headers.html';?>
     </head>
     <body>
         <?php include 'layouts/navbar.php';?>
         <!-- Product section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <?php
+                        // Array of images
+                        $images = [
+                            'foxy_showcase_1.jpg',
+                            'foxy_showcase_1.jpg',
+                            'foxy_showcase_1.jpg'
+                        ];
+                        
+                        // Loop through the images and create carousel slides
+                        foreach ($images as $index => $image) {
+                            $active = ($index == 0) ? 'active' : ''; // Set the first image as active
+                            
+                            echo '<div class="carousel-item ' . $active . '">';
+                            echo '<img class="d-block w-100" src="assets/' . $image . '" alt="Slide">';
+                            echo '</div>';
+                        }
+                        ?>
+                    </div>
+                    
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
                     <div class="col-md-6">
