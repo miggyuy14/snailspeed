@@ -15,11 +15,10 @@
                     <div id="carouselExampleControls" class="carousel slide card-img-top mb-5 mb-md-0" data-ride="carousel">
                     <div class="carousel-inner">
                         <?php
-                        // Array of images
                         $images = [
                             'foxy_showcase_1.jpg',
-                            'foxy_showcase_1.jpg',
-                            'foxy_showcase_1.jpg'
+                            'Brown Modern Food Poster.png',
+                            'Black Red Creative Pizza Food Flyer.png'
                         ];
                         
                         // Loop through the images and create carousel slides
@@ -44,20 +43,8 @@
                     </a>
                 </div></div>
                     <div class="col-md-6">
-                        <div class="small mb-1">SKU: BST-498</div>
-                        <h1 class="display-5 fw-bolder">Shop item template</h1>
-                        <div class="fs-5 mb-5">
-                            <span class="text-decoration-line-through">$45.00</span>
-                            <span>$40.00</span>
-                        </div>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
-                        <div class="d-flex">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                <i class="bi-cart-fill me-1"></i>
-                                Add to cart
-                            </button>
-                        </div>
+                        <h1 class="display-5 fw-bolder">Great Pizzas awaits you!</h1>
+                        <p class="lead">All delicious pizzas are homemade with original recipe that will surely satisfy your taste.</p>
                     </div>
                 </div>
             </div>
