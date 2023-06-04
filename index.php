@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php include 'layouts/headers.html';?>
+        <?php 
+        include 'DocumentRootReference.php';
+        include $rootProjectPath . '/layouts/headers.php';
+        ?>
+        <title>Foxy's Kitchen | Homepage</title>
     </head>
     <body>
-        <?php include 'layouts/navbar.php';?>
+        <?php include  $rootProjectPath . '/pages/navbar.php';?>
         <!-- Product section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">

@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <?php 
+    include '../DocumentRootReference.php';
+    include $rootProjectPath . '/layouts/headers.php';?>
     <title>Contact Us</title>
 </head>
 <body>
+    <?php 
+    include $rootProjectPath . '/database/DbConnect.php';
+    include $rootProjectPath . '/pages/navbar.php';
+    ?>
     <h2>Contact Us</h2>
     
     <?php
-    include '../database/DbConnect.php';
     // Check if the form is submitted
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Get form data
