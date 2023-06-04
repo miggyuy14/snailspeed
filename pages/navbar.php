@@ -1,13 +1,13 @@
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: linear-gradient(100deg, #fed8b1, #ffdebe);">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: linear-gradient(100deg, #546e7a, #78909c);">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#!"><img style="height: 80px; width: 140px; margin-right: -40px; padding: 0px;" src="http://localhost/foxy-kitchen/assets/foxy_s_kitchen-removebg.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/ContactUs.php">Contact Us</a></li>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a id="active1" class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a id="active2" class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a id="active3" class="nav-link" href="pages/ContactUs.php">Contact Us</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -18,13 +18,6 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
                 </div>
             </div>
         </nav>
