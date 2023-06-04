@@ -1,0 +1,6 @@
+{
+    "name": "usuymi00/foxy-kitchen",
+    "require": {
+        "doctrine/migrations": "^3.6"
+    }
+}

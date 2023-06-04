@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Us</title>
-</head>
+<?php include 'layouts/headers.php'?>
 <body>
+    <?php 
+    include 'database/DbConnect.php';
+    include 'layouts/navbar.php';
+    ?>
     <h2>Contact Us</h2>
     
     <?php
-    include '../database/DbConnect.php';
     // Check if the form is submitted
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Get form data
@@ -55,5 +54,11 @@
         <br>
         <input type="submit" value="Submit">
     </form>
+
+    <?php include './layouts/footer.php'; ?>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
 </body>
 </html>

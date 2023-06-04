@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <?php include 'layouts/headers.html';?>
-    </head>
+<?php include './layouts/headers.php'?>
     <body>
-        <?php include 'layouts/navbar.php';?>
+        <?php include './layouts/navbar.php';?>
         <!-- Product section-->
         <section class="py-5 border">
             <div class="container px-4 px-lg-5 my-5">
@@ -155,7 +151,7 @@
                 </div>
             </div>
         </section>
-        <?php include 'layouts/footer.php'; ?>
+        <?php include './layouts/footer.php'; ?>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
