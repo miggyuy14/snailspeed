@@ -6,7 +6,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a id="active1" class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a id="active2" class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a id="active2" class="nav-link" href="pages/AboutUs.php">About</a></li>
                         <li class="nav-item"><a id="active3" class="nav-link" href="pages/ContactUs.php">Contact Us</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
