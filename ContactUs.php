@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <?php 
-    include '../DocumentRootReference.php';
-    include $rootProjectPath . '/layouts/headers.php';?>
-    <title>Contact Us</title>
-</head>
+<?php include 'layouts/headers.php'?>
 <body>
     <?php 
-    include $rootProjectPath . '/database/DbConnect.php';
-    include $rootProjectPath . '/pages/navbar.php';
+    include 'database/DbConnect.php';
+    include 'layouts/navbar.php';
     ?>
     <h2>Contact Us</h2>
     
@@ -61,5 +54,11 @@
         <br>
         <input type="submit" value="Submit">
     </form>
+
+    <?php include './layouts/footer.php'; ?>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
 </body>
 </html>

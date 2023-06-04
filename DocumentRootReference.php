@@ -1,3 +1,4 @@
 <?php 
-$rootProjectPath = realpath(__DIR__);
+$rootPath = str_replace('\\', '/', __DIR__);
+$projectFolder = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
 ?>
