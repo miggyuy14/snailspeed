@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Foxy Kitchen | Admin User Contact</title>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
-</head>
+<?php include 'layouts/headers.php'?>
 <body>
+    <?php include 'layouts/navbar.php'?>
     <table id="datatable">
         <thead>
             <tr>
