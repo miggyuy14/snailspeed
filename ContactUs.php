@@ -1,4 +1,6 @@
-<?php include 'layouts/headers.php'?>
+<!DOCTYPE html>
+<html lang="en">
+    <?php include 'layouts/headerContactUs.php'?>
 <body>
     <?php 
     include 'database/DbConnect.php';
@@ -24,7 +26,7 @@
             $pdo = new PDO("mysql:host=$host;dbname=$database", $username, $password);
             
             // Prepare and execute the SQL query to insert the data into the database
-            $stmt = $pdo->prepare("INSERT INTO contacts (first_name, last_name, email, contact_number,message) VALUES (?, ?, ?, ?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO contact_info (first_name, last_name, email, contact_number,message) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([$first_name, $last_name, $email, $contact_number,$message]);
             
             if ($stmt) {

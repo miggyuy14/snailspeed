@@ -1,0 +1,30 @@
+#active1{
+    color: yellow;
+}
+#active2{
+    color: white;
+}
+#active3{
+    color: white;
+}
+#navbarDropdown{
+    color: white;
+}
+#active4{
+    color: white;
+}
+#active1:hover{
+    color: #FFFBC8;
+}
+#active2:hover{
+    color: orange;
+}
+#active3:hover{
+    color: orange;
+}
+#active4:hover{
+    color: orange;
+}
+#navbarDropdown:hover{
+    color: orange;
+}

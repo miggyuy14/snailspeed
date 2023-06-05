@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>About Us</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css\styles.css" rel="stylesheet" />
-        <link href="" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</head>
+    <?php include 'layouts\headerAboutUs.php'?>
 <body>
     <?php include $_SERVER["DOCUMENT_ROOT"] . "/foxy-templated/layouts/navbar.php";?>
+            <!-- Product section-->
+            <section class="py-5 border" id="top">
+            <div class="container px-4 px-lg-5 my-5">
+            
+
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6">
+                    <div id="carouselExampleControls" class="carousel slide card-img-top mb-5 mb-md-0" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <?php
+                        $images = [
+                            'foxy_showcase_1.jpg',
+                            'Pepperoni.png',
+                            'BestSeller.png'
+                        ];
+                        
+                        // Loop through the images and create carousel slides
+                        foreach ($images as $index => $image) {
+                            $active = ($index == 0) ? 'active' : ''; // Set the first image as active
+                            
+                            echo '<div class="carousel-item ' . $active . '">';
+                            echo '<img class="d-block w-100" src="assets/' . $image . '" alt="Slide">';
+                            echo '</div>';
+                        }
+                        ?>
+                    </div>
+                    
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div></div>
+                    <div class="col-md-6">
+                        <h1 class="display-5 fw-bolder">Great Pizzas awaits you!</h1>
+                        <p class="lead">All delicious pizzas are homemade with original recipe that will surely satisfy your taste.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     <?php include $_SERVER["DOCUMENT_ROOT"] . "/foxy-templated/layouts/footer.php";?>
 </body>
 </html>
