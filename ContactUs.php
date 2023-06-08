@@ -38,7 +38,7 @@
     }
     ?>
     
-    <form method="post" action="">
+    <form method="post" action="" class="contact-form">
         <label for="name">First Name:</label>
         <input type="text" name="first_name" id="first_name" required>
         <br>

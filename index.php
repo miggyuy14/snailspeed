@@ -14,7 +14,7 @@
                         $images = [
                             'foxy_showcase_1.jpg',
                             'Pepperoni.png',
-                            'BestSeller.png'
+                            'BestSeller.png',
                         ];
                         
                         // Loop through the images and create carousel slides
