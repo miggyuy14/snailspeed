@@ -2,13 +2,12 @@
     <body>
         <?php include './layouts/navbar.php';?>
         <!-- Product section-->
-        <section class="py-5" id="top">
-            <div class="container px-4 px-lg-5 my-5">
+        <section class="py-0" id="top">
+            <div class="container px-4 px-lg-0 my-5">
             
-
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
-                    <div id="carouselExampleControls" class="carousel slide card-img-top mb-5 mb-md-0" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade  card-img-top mb-5 mb-md-0" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <?php
                         $images = [

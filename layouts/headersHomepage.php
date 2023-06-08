@@ -14,6 +14,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/activeHomePage.css" rel="stylesheet">
+        <link href="" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
         <title>Foxy's Kitchen </title>
