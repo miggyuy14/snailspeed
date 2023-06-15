@@ -8,7 +8,6 @@
             <section class="py-1">
             <div class="container px-auto px-lg-auto my-10">
             <h1>About Us - Foxy's Kitchen</h1>
-            <p>(Read LEFT to RIGHT)</p>
                 <div class="row gx-3 gx-lg-5 align-items-center">
                     <div class="col-md-4">
                         <p>Foxy's kitchen was a successful food business, it started back in 2016 by Aubrey De Leon Danos in Las Pinas. Foxy’s Kitchen began as a small business specializing in cakes and breads. However, it was the vision and innovative approach of Vincent Aguila that helped Aubrey De Leon Danos that made Foxy’s Kitchen into a successful food business.</p>
