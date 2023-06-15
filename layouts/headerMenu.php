@@ -1,6 +1,4 @@
- <!DOCTYPE html>
- <html lang="en">
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -15,39 +13,9 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/Menu.css" rel="stylesheet">
+        <link href="css/activeHomePage.css" rel="stylesheet">
         <link href="" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
         <title>Mene</title>
     </head>
- <body>
-    <?php include './layouts/navbar.php';?>
-    <h1>Menu</h1>
-
-    <table id="menu-table">
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Prices</th>
-            <th>Action</th>
-        </tr>
-        <!-- Menu Items willw be dynamically generated here -->
-    </table>
-    <?php
-    // Retrieve menu items from the database
-    $menuItems = [
-        ["id" => 1, "name" => "Pizza", "description" => "Delicious pizza with various toppings.", "price" => 9.99],
-        ["id" => 2, "name" => "Burger", "description" => "Juicy burger with fries.", "price" => 7.99],
-        // Add more menu items as needed
-        ];
-
-        // Send the menu items as JSON response
-        header('Content-Type: application/json');
-        echo json_encode($menuItems);
-    ?>
-
-    <script src="js\Menu.js"></script>
-    <?php include $_SERVER["DOCUMENT_ROOT"] . "/foxy-templated/layouts/footer.php";?>
- </body>
- </html>
