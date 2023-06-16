@@ -18,12 +18,20 @@
                                 <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
                             </ul>
                         </li>
+
+                        <li style="margin-left: 570px;">
                         <li class="nav-item"><a id="active4" class="nav-link" href="UserContact.php">Admin</a></li>
                         <!-- Button trigger modal -->
                         <li>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" style="margin-right: 5px;">
                             Login
                             </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal" style="margin-right: 5px;">
+                            Sign-Up
+                            </button>
+                        </li>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +51,7 @@
       <div class="modal-body">
         <form action="auth/login.php" method="POST">
           <div class="form-group">
-            <label for="email">email</label>
+            <label for="email">Email</label>
             <input type="text" class="form-control" id="email" name="email" required>
           </div>
           <div class="form-group">
@@ -56,3 +64,48 @@
     </div>
   </div>
 </div>
+
+<!-- Registration Modal -->
+
+<div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registrationModalLabel">Registration Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="registration.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact Number:</label>
+            <input type="tel" class="form-control" id="contact" name="contact" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" class="form-control" id="address" name="address" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

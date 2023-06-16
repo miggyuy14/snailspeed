@@ -154,5 +154,25 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+    // Function to hide the modal button and form
+    function hideModalContent() {
+      var modalButton = document.getElementById('modalButton');
+      var modalForm = document.querySelector('#registrationModal form');
+      if (modalButton && modalForm) {
+        modalButton.style.display = 'none';
+        modalForm.style.display = 'none';
+      }
+    }
+
+    // Simulating successful registration
+    var registrationSuccess = true; // Replace with your own logic to determine registration success
+
+    if (registrationSuccess) {
+      // Call the function to hide the modal button and form
+      hideModalContent();
+    }
+  </script>
     </body>
 </html>
