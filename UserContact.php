@@ -1,4 +1,5 @@
-<?php include 'layouts\headersAdmin.php'?>
+<?php 
+include 'layouts\headersAdmin.php'?>
 <body>
     <?php include 'layouts/navbar.php'?>
     <table id="datatable">

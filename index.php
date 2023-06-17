@@ -1,4 +1,5 @@
-<?php include 'layouts\headersHomepage.php'?>
+<?php 
+include 'layouts\headersHomepage.php'?>
     <body>
         <?php include './layouts/navbar.php';?>
         <!-- Product section-->

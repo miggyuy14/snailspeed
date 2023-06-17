@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php include 'layouts/headerContactUs.php'?>
+    <?php 
+    
+    include 'layouts/headerContactUs.php'?>
 <body>
     <?php 
     include 'database/DbConnect.php';

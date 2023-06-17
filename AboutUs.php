@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php include 'layouts\headerAboutUs.php'?>
+    <?php 
+    session_start();
+    include 'layouts\headerAboutUs.php'?>
     
 <body>
     <?php include $_SERVER["DOCUMENT_ROOT"] . "/foxy-templated/layouts/navbar.php";?>
