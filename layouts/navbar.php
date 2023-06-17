@@ -9,7 +9,7 @@
                         <li class="nav-item"><a id="active1" class="nav-link active" aria-current="page" href="index.php">Home</a></li>
                         <li class="nav-item"><a id="active2" class="nav-link" href="AboutUs.php">About</a></li>
                         <li class="nav-item"><a id="active3" class="nav-link" href="ContactUs.php">Contact Us</a></li>
-                        <li class="nav-item"><a id="menu" class="nav-link" href="#">Menu</a></li>
+                        <li class="nav-item"><a id="menu" class="nav-link" href="Menu.php">Menu</a></li>
 
                         <li style="margin-left: 578px;">
                         <li class="nav-item"><a id="active4" class="nav-link" href="UserContact.php">Admin</a></li>

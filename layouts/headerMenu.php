@@ -17,5 +17,83 @@
         <link href="" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
-        <title>Mene</title>
+        <title>Menu</title>
+        <!-- Custom CSS -->
+        <style>
+        .menu-item {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .menu-item h5 {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .menu-item p {
+            margin-bottom: 5px;
+        }
+        .add-to-cart-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        body {
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url("assets/MenuBackground.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+        }
+        body {
+            font-family: "Arial", sans-serif; /* Example: Change the font to Arial */
+        }
+
+        h1 {
+            font-family: "Input Mono", monospace; /* Example: Change the font for the menu header */
+            font-size: 50px; /* Example: Adjust the font size */
+            font-weight: bold;
+            margin-top: -20px;
+            color: #FFDE59;
+        }
+
+        .menu-item h5 {
+            font-family: "Georgia", serif; /* Example: Change the font for the item title */
+            font-size: 18px; /* Example: Adjust the font size */
+            font-weight: bold;
+            color: #FF914D;
+        }
+
+        .menu-item p {
+            font-family: "Verdana", sans-serif; /* Example: Change the font for the item description */
+            font-size: 14px; /* Example: Adjust the font size */
+        }
+        </style>
     </head>
