@@ -80,7 +80,7 @@
             font-family: "Input Mono", monospace; /* Example: Change the font for the menu header */
             font-size: 50px; /* Example: Adjust the font size */
             font-weight: bold;
-            margin-top: -20px;
+            margin-top: -5px;
             color: #FFDE59;
         }
 
@@ -95,5 +95,6 @@
             font-family: "Verdana", sans-serif; /* Example: Change the font for the item description */
             font-size: 14px; /* Example: Adjust the font size */
         }
+
         </style>
     </head>
