@@ -1,11 +1,11 @@
 #active1{
-    color: white;
+    color: yellow;
 }
 #active2{
     color: white;
 }
 #active3{
-    color: yellow;
+    color: white;
 }
 #menu{
     color: white;
@@ -13,13 +13,13 @@
 #active4{
     color: white;
 }
-#active3:hover{
+#active1:hover{
     color: #FFFBC8;
 }
-#active1:hover{
+#active2:hover{
     color: orange;
 }
-#active2:hover{
+#active3:hover{
     color: orange;
 }
 #active4:hover{

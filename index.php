@@ -38,8 +38,8 @@
                     </a>
                 </div></div>
                     <div class="col-md-6">
-                        <h1 class="display-5 fw-bolder">Great Pizzas awaits you!</h1>
-                        <p class="lead">All delicious pizzas are homemade with original recipe that will surely satisfy your taste.</p>
+                        <h1 class="display-5 fw-bolder text-uppercase">Discover the Ultimate Pizza Experience</h1>
+                        <p class="lead font-italic">Indulge in our mouthwatering pizzas, made with love and a secret recipe that will leave you craving for more.</p>
                     </div>
                 </div>
             </div>
