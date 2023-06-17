@@ -8,7 +8,7 @@
     include 'database/DbConnect.php';
     include 'layouts/navbar.php';
     ?>
-    <h2>Contact Us</h2>
+    <h2 style="text-align: center;">Contact Us</h2>
     
     <?php
     // Check if the form is submitted

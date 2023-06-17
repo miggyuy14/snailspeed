@@ -25,8 +25,10 @@ include 'DocumentRootReference.php';?>
                           $role = $_SESSION['role'];
 
                           if($role == 'admin'){
-                            echo '<li class="nav-item"><a id="active4" class="nav-link" href="UserContact.php">Admin</a></li>';
+                            echo '<li style="margin-left: 578px;"><li class="nav-item"><a id="active4" class="nav-link" href="UserContact.php">Admin</a></li>';
                           }
+                          echo '<li class="nav-item"><a id="menu" class="nav-link" href="Menu.php">Menu</a></li>';
+
                           echo '<li class="nav-item"><a id="active4" class="nav-link">'. $_SESSION['name'] .'</a></li>';
                         }else{
                           echo '<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button></li>';
@@ -34,7 +36,21 @@ include 'DocumentRootReference.php';?>
                         }
                         ?>
                         <!-- Button trigger modal -->
+                        <li class="nav-item"><a id="menu" class="nav-link" href="Menu.php">Menu</a></li>
+
                         
+                        <!-- Button trigger modal -->
+                        <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" style="margin-right: 5px;">
+                            Login
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal" style="margin-right: 5px;">
+                            Sign-Up
+                            </button>
+                        </li>
+                        </li>
                         
                     </ul>
                 </div>
@@ -54,7 +70,7 @@ include 'DocumentRootReference.php';?>
       <div class="modal-body">
         <form action="auth/login.php" method="POST">
           <div class="form-group">
-            <label for="email">email</label>
+            <label for="email">Email</label>
             <input type="text" class="form-control" id="email" name="email" required>
           </div>
           <div class="form-group">
@@ -68,6 +84,7 @@ include 'DocumentRootReference.php';?>
   </div>
 </div>
 
+<<<<<<< HEAD
 <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -93,3 +110,73 @@ include 'DocumentRootReference.php';?>
     </div>
   </div>
 </div>
+=======
+    <!-- Registration modal -->
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registrationModalLabel">Registration Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="registration.php" method="post">
+                        <!-- Your form fields here -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact_number" class="form-label">Contact Number</label>
+                            <input type="tel" class="form-control" id="contact_number" name="contact_number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm_password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                        </div>
+                        <div id="registrationError" style="color: red;"></div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        // Function to hide the modal button and form
+        function hideModalContent() {
+            var modalButton = document.getElementById('modalButton');
+            var modalForm = document.querySelector('#registrationModal form');
+            if (modalButton && modalForm) {
+                modalButton.style.display = 'none';
+                modalForm.style.display = 'none';
+            }
+        }
+
+        // Simulating successful registration
+        var registrationSuccess = true; // Replace with your own logic to determine registration success
+
+        if (registrationSuccess) {
+            // Call the function to hide the modal button and form
+            hideModalContent();
+        }
+    </script>
+
+>>>>>>> dceeaf18e7a43d7415af971ccab2d55351187f0b

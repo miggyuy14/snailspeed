@@ -3,13 +3,12 @@ include 'layouts\headersHomepage.php'?>
     <body>
         <?php include './layouts/navbar.php';?>
         <!-- Product section-->
-        <section class="py-5" id="top">
-            <div class="container px-4 px-lg-5 my-5">
+        <section class="py-0" id="top">
+            <div class="container px-4 px-lg-0 my-5">
             
-
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
-                    <div id="carouselExampleControls" class="carousel slide card-img-top mb-5 mb-md-0" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade  card-img-top mb-5 mb-md-0" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <?php
                         $images = [
@@ -40,8 +39,8 @@ include 'layouts\headersHomepage.php'?>
                     </a>
                 </div></div>
                     <div class="col-md-6">
-                        <h1 class="display-5 fw-bolder">Great Pizzas awaits you!</h1>
-                        <p class="lead">All delicious pizzas are homemade with original recipe that will surely satisfy your taste.</p>
+                        <h1 class="display-5 fw-bolder text-uppercase">Discover the Ultimate Pizza Experience</h1>
+                        <p class="lead font-italic">Indulge in our mouthwatering pizzas, made with love and a secret recipe that will leave you craving for more.</p>
                     </div>
                 </div>
             </div>
@@ -156,5 +155,25 @@ include 'layouts\headersHomepage.php'?>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+    // Function to hide the modal button and form
+    function hideModalContent() {
+      var modalButton = document.getElementById('modalButton');
+      var modalForm = document.querySelector('#registrationModal form');
+      if (modalButton && modalForm) {
+        modalButton.style.display = 'none';
+        modalForm.style.display = 'none';
+      }
+    }
+
+    // Simulating successful registration
+    var registrationSuccess = true; // Replace with your own logic to determine registration success
+
+    if (registrationSuccess) {
+      // Call the function to hide the modal button and form
+      hideModalContent();
+    }
+  </script>
     </body>
 </html>
