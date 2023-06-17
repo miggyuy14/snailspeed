@@ -4,10 +4,14 @@ include '../database/DbConnect.php';
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve the form data
-    $username = $_POST['username'];
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $email = $_POST['email'];
+    $contact = $_POST['contact_number'];
+    $address = $_POST['address'];
     $password = $_POST['password'];
     $confirmPassword = $_POST['confirm_password'];
-    $email = $_POST['email'];
+    $role = 'user';
 
     // Perform any necessary validation on the form data
     // ...
@@ -20,10 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $password = password_hash($password, PASSWORD_DEFAULT);
     // Insert the data into your database (assuming you have a 'users' table)
-    $sql = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
+    $sql = "INSERT INTO users (first_name, last_name, email, contact, address, password, role) VALUES ('$first_name', '$last_name', '$email', '$contact', '$address', '$password', '$role')";
 
     if ($conn->query($sql) === true) {
-        echo 'Registration successful.';
+        $_SESSION['name'] = $user['first_name']. ' ' . $user['last_name'];
+        $_SESSION['role'] = $user['role'];
+        header("Location: ../index.php");
     } else {
         echo 'Error: ' . $sql . '<br>' . $conn->error;
     }

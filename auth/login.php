@@ -22,6 +22,7 @@ if ($user && password_verify($password, $user['password'])) {
     // Valid credentials
     $_SESSION['name'] = $user['first_name']. ' ' . $user['last_name'];
     $_SESSION['role'] = $user['role'];
+    header("Location: ../index.php");
     // You can redirect the user to a different page or perform additional actions here
 } else {
     // Invalid credentials

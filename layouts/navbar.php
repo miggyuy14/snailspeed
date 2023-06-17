@@ -30,27 +30,12 @@ include 'DocumentRootReference.php';?>
                           echo '<li class="nav-item"><a id="menu" class="nav-link" href="Menu.php">Menu</a></li>';
 
                           echo '<li class="nav-item"><a id="active4" class="nav-link">'. $_SESSION['name'] .'</a></li>';
+                          echo '<li class="nav-item"><a id="menu" class="nav-link" href="auth/logout.php">Logout</a></li>';
                         }else{
                           echo '<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button></li>';
-                          echo '<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">Sign up</button></li>';
+                          echo '<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">Sign up</button></li>';
                         }
                         ?>
-                        <!-- Button trigger modal -->
-                        <li class="nav-item"><a id="menu" class="nav-link" href="Menu.php">Menu</a></li>
-
-                        
-                        <!-- Button trigger modal -->
-                        <li>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" style="margin-right: 5px;">
-                            Login
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal" style="margin-right: 5px;">
-                            Sign-Up
-                            </button>
-                        </li>
-                        </li>
                         
                     </ul>
                 </div>
@@ -84,7 +69,6 @@ include 'DocumentRootReference.php';?>
   </div>
 </div>
 
-<<<<<<< HEAD
 <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -110,7 +94,6 @@ include 'DocumentRootReference.php';?>
     </div>
   </div>
 </div>
-=======
     <!-- Registration modal -->
     <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -120,15 +103,19 @@ include 'DocumentRootReference.php';?>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="registration.php" method="post">
+                    <form action="auth/register.php" method="post">
                         <!-- Your form fields here -->
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
+                            <label for="first_name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="last_name" class="form-label">last Name</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" required>
                         </div>
                         <div class="mb-3">
                             <label for="contact_number" class="form-label">Contact Number</label>
@@ -179,4 +166,3 @@ include 'DocumentRootReference.php';?>
         }
     </script>
 
->>>>>>> dceeaf18e7a43d7415af971ccab2d55351187f0b
