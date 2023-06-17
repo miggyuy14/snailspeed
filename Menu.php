@@ -5,7 +5,7 @@
 <?php include './layouts/navbar.php';?>
 <div class="container">
     <div class="menu-heading">
-        <h1 class="text-center">Menu</h1>
+        <h1 class="text-center mt-5" style="background-color: orange; border-radius: 30px;">Menu</h1>
     </div>
     <div class="row">
         <div class="col-lg-4 col-md-6">
